@@ -1,25 +1,22 @@
+import Image from "next/image";
 import React from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
 
 const Recommendations = () => {
-	// const settings = {
-	// 	dots: true,
-	// 	infinite: true,
-	// 	speed: 500,
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 1,
-	// };
 	return (
-		<div className="w-full  bg-pink-300 h-80">
-			<div className="w-3/4 m-auto">
-				<div className="mt-20">
-					{/* <Slider {...settings}> */}
+		<div className="w-full  bg-pink-600">
+			<div className="w-3/4 m-auto swiper">
+				<div className="my-10 swiper-wrapper grid-cols-3 gap-5">
 					{data.map((e) => (
-						<div className="bg-white h-[450px] text-black rounded-xl">
-							<div className="h-60 rounded-t-xl flex justify-center items-center">
-								<img src={e.image} alt="" className="h-45 w-45" />
+						<div className="bg-gray-50 w-full text-black rounded-xl">
+							<div className="w-full rounded-t-xl flex justify-center items-center">
+								<Image
+									src={e.image}
+									height={300}
+									width={400}
+									alt=""
+									className="w-full aspect-video rounded-t-xl object-cover"
+								/>
 							</div>
 
 							<div className="flex flex-col justify-center items-center gap-4 p-4">
@@ -31,7 +28,6 @@ const Recommendations = () => {
 							</div>
 						</div>
 					))}
-					{/* </Slider> */}
 				</div>
 			</div>
 		</div>
