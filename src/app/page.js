@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className='w-full bg-white min-h-screen'>
       <HomeBanner />
-      <Recommendations />
+      
     </main>
   
   )
