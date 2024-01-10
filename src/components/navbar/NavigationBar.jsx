@@ -3,7 +3,7 @@ import CompWrapper from '../Utils/CompWrapper'
 
 const Navigation = () => {
     return (
-        <nav className="bg-white shadow-lg w-full sticky top-0 z-50 bg-gray-100">
+        <nav className="shadow-lg w-full sticky top-0 z-50 bg-gray-100">
         <CompWrapper>
           <div className="max-w-7xl mx-auto px-4 ">
             <div className="flex justify-between items-center py-3">
